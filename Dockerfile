@@ -3,8 +3,7 @@ FROM node:14-stretch-slim as react_build
 WORKDIR /app
 COPY . /app
 # #prepare the contiainer for building react 
-RUN npm install --silent
-RUN npm install react-scripts@3.0.1 -g --silent 
+RUN npm install
 RUN npm run build 
 
 FROM nginx:latest
