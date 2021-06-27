@@ -1,4 +1,5 @@
 FROM node:14-stretch-slim as build
+ENV NODE_OPTIONS=--max-old-space-size=8192
 # Create app directory
 WORKDIR /app
 COPY . /app
