@@ -1,4 +1,4 @@
-FROM node:12.18.4 AS build
+FROM node:14-stretch-slim as build
 # Create app directory
 WORKDIR /app
 COPY . /app
