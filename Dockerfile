@@ -1,9 +1,10 @@
-FROM node:14-stretch-slim as build
+FROM node:14-stretch-slim as builder
 # Create app directory
 WORKDIR /app
 COPY . /app
-RUN npm install && npm run build
+RUN npm install
+RUN npm run build
 
 FROM nginx:latest
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=builder /app/build /usr/share/nginx/html
 ENTRYPOINT ["nginx","-g","daemon off;"]
