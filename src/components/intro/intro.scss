@@ -1,0 +1,84 @@
+@import '../../global.scss';
+
+.intro {
+
+    .content {
+        display: flex;
+        height: 100%;
+
+        .left{
+            flex: 0.6;
+            overflow: hidden;
+            margin-top: 50px;
+            .container {
+                background: #00F260;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to left, #3699d3, #0ddd6b);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to left, #3699d3, #0ddd6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+                border-radius: 50%;
+                width: 770px;
+                height: 770px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                margin-left: 20px;
+                border: 1px solid #3699d3;
+
+                .avatar{
+                    width: 400px;
+                    height: 500px;
+                    border-radius: 48%;
+                    border: 2px solid white;
+                    margin-right: -10px;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                }
+            }
+        }
+    
+        .right {
+            flex: 0.4;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .wrapper {
+                h1 {
+                    font-size: 55px;
+                    margin: 15px 0;
+                }
+
+                h2 {
+                    font-size: 45px;
+                }
+
+                h3 {
+                    font-size: 35px;
+                    overflow: hidden;
+                    padding-bottom: 5px;
+                    span {
+                        font-size: inherit;
+                        color: #e90a58;
+                        border-bottom: 3px solid #34CFAD;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+.icon_action {
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+    font-size: 40px;
+    animation: arrowBlink 2s infinite;
+
+    @keyframes arrowBlink {
+        80% {
+            opacity: 0;
+        }
+        
+    }
+}
