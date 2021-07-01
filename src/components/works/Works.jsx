@@ -44,7 +44,7 @@ function Works() {
         <div className="works" id="projects">
             <div className="header">
                 <h1>My Projects</h1>
-                <span>When I'm free time, I'm learn and make some projects</span>
+                <span>When I'm free time, zzz I'm learn and make some projects</span>
             </div>
             <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
                 {data.map((d) => (
