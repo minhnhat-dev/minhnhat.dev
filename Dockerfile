@@ -20,7 +20,7 @@ STOPSIGNAL SIGTERM
 
 CMD ["nginx", "-g", "daemon off;"]
 
-
+# fuck
 # FROM node:14-stretch-slim as react_build
 # # Create app directory
 # WORKDIR /app
