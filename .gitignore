@@ -10,7 +10,8 @@
 
 # production
 /build
-
+/letsencrypt
+/nginx.conf
 # misc
 .DS_Store
 .env.local
