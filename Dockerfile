@@ -1,7 +1,7 @@
 FROM node:14-stretch-slim as build
 WORKDIR /app
 COPY . /app
-RUN npm install && npm run build
+RUN npm install && npm install node-sass && npm run build
 
 FROM ubuntu:18.04
 
