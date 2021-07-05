@@ -4,7 +4,6 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: dockernhatnguyen/minhnhat.dev.v2
     ports:
       - '80:80'
       - '443:443'
