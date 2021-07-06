@@ -7,7 +7,7 @@
     top: 0;
     z-index: 3;
     transition: all 1.5s ease;
-
+    
     .wrapper {
         height: 100%;
         margin: 0 30px;
@@ -19,19 +19,31 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-
+    
             .logo {
                 font-size: 40px;
                 text-decoration: none;
                 color: inherit;
                 margin-right: 80px;
                 font-weight: 500;
+
+                @include mobile320 {
+                    font-size: 22px !important;
+                }
+
+                @include mobile {
+                    font-size: 30px;
+                }
             } 
 
             .info {
                 display: flex;
                 align-items: center;
                 margin-right: 20px;
+
+                @include mobile {
+                    display: none;
+                }
 
                 .icon {
                     margin-right: 5px;
@@ -53,7 +65,8 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
-
+                cursor: pointer;
+                
                 span {
                    width: 100%; 
                    background-color: black;

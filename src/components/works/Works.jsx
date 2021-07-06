@@ -7,21 +7,21 @@ const data = [
         icon: "./assets/mobile.png",
         title: "Web Design",
         desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+        "Lorem Ipsum is simply dummy text "
     },
     {
         id: "2",
         icon: "./assets/globe.png",
         title: "Mobile Application",
         desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "Lorem Ipsum is simply dummy text of."
     },
     {
         id: "3",
         icon: "./assets/writing.png",
         title: "Branding",
         desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "Lorem Ipsum is simply dummy text ."
     }
 ];
 
@@ -44,7 +44,7 @@ function Works() {
         <div className="works" id="projects">
             <div className="header">
                 <h1>My Projects</h1>
-                <span>When I'm free time, zzzzzz I'm learn and make some projects</span>
+                <span>When I'm free time, I'm learn and make some projects</span>
             </div>
             <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
                 {data.map((d) => (

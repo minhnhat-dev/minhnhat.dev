@@ -9,6 +9,14 @@
 
     h1 {
         font-size: 40px;
+
+        @include mobile {
+            font-size: 35px;
+        }
+
+        @include mobile320 {
+            font-size: 30px;
+        }
     }
 
     ul {
@@ -26,7 +34,11 @@
         align-items: center;
         justify-content: center;
         margin-top: 20px;
-        
+
+        @include mobile {
+            width: 100%;
+        }
+
         .item {
             position: relative;
             display: flex;
@@ -38,12 +50,21 @@
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
             cursor: pointer;
 
+            @include mobile {
+                margin: 5px 10px;
+            }
+            
             span {
                 position: absolute;
                 font-weight: 600;
                 font-size: 20px;
                 color: white;
                 z-index: 0;
+                text-align: center;
+
+                @include mobile {
+                    font-size: 10px;
+                }
             }
 
             img {
@@ -53,6 +74,17 @@
                 border-radius: 15px;
                 object-fit: cover;
                 z-index: 1;
+
+
+                @include mobile {
+                    width: 70px;
+                    height: 70px;
+                }
+
+                @include mobile320 {
+                    width: 50px;
+                    height: 50px;
+                }
             }
 
             &:hover {
