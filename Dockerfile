@@ -14,6 +14,9 @@ STOPSIGNAL SIGTERM
 
 CMD ["nginx", "-g", "daemon off;"]
 
+# docker-compose up -d
+# docker exec -it <frontend_container> bash       # bash into the nginx container
+# certbot --nginx -d domain.com -d www.domain.com  
 # fuck
 # FROM node:14-stretch-slim as react_build
 # # Create app directory
