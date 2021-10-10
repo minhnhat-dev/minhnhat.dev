@@ -1,7 +1,6 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .testimonial {
-
     h1 {
         text-align: center;
         font-size: 40px;
@@ -36,9 +35,9 @@
             border-radius: 10px;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
             transition: all 0.3s ease;
-            
+
             @include mobile {
-               height: 350px;
+                height: 350px;
             }
 
             &.main {
@@ -53,21 +52,22 @@
             &:hover {
                 transform: scale(1.1);
             }
-            
+
             .top {
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                .left, .right {
-                   font-size: 30px;
-                   cursor: pointer;
+                .left,
+                .right {
+                    font-size: 30px;
+                    cursor: pointer;
 
-                   @include mobile {
+                    @include mobile {
                         font-size: 20px;
                     }
                 }
-                
+
                 .center {
                     width: 60px;
                     height: 60px;
@@ -86,7 +86,7 @@
 
             .content {
                 width: 250px;
-                background-color:#ccd0da;
+                background-color: #ccd0da;
                 border-radius: 10px;
                 padding: 15px;
 

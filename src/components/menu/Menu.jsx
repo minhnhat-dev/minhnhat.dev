@@ -1,6 +1,6 @@
-import React from "react";
-import MenuItem from "../menu-items/MenuItem";
-import "./menu.scss";
+import React from "react"
+import MenuItem from "../menu-items/MenuItem"
+import "./menu.scss"
 
 function Menu({ menuOpen, setMenuOpen }) {
     return (
@@ -13,7 +13,7 @@ function Menu({ menuOpen, setMenuOpen }) {
                 <MenuItem text="Contact" id="#contact" setMenuOpen={setMenuOpen} />
             </ul>
         </div>
-    );
+    )
 }
 
-export default Menu;
+export default Menu

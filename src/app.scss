@@ -1,33 +1,23 @@
-@import './global.scss';
+@import "./global.scss";
 
-*{
+* {
     margin: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     overflow-x: hidden;
 }
 
 .app {
     height: 100vh;
-    
-    .sections {
-        width: 100%;
-        height: calc(100vh - 80px);
-        top: 80px;
+}
 
-        position: relative;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-
-        &::-webkit-scrollbar{
-            display: none;
-        } 
-
-        > * { /* mỗi elements trong class sections sẽ chịu những css này */
-            width: 100vw;
-            height: calc(100vh - 80px);
-            scroll-snap-align: start;
-            scroll-behavior: smooth;
-        }
-    }
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
