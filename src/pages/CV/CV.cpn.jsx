@@ -165,3 +165,40 @@ export const Header = styled.h1`
     color: #195a70;
     ${mobile({ fontSize: "35px" })}
 `
+
+export const SkillList = styled.ul`
+    display: flex;
+   flex-wrap: wrap;
+   margin: 20px;
+`
+
+export const SkillItem = styled.li``
+export const SkillImage = styled.img`
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+`
+export const SkillContent = styled.div`
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 10px;
+`
+
+export const ProjectsContainer = styled.div`
+   display: flex;
+`
+export const ProjectsContainerWrapper = styled.div`
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+`
+export const ProjectsContainerLeft = styled.div`flex: 1;`;
+export const ProjectsContainerRight = styled.div`flex: 1;`
+export const NameProject = styled.p``
+export const LinkDemo = styled.p``
+export const LinkGit = styled.p``

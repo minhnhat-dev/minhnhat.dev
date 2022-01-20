@@ -11,6 +11,9 @@ import IconRedis from "../../shared/IconRedis/IconRedis"
 import IconRedux from "../../shared/IconRedux/IconRedux"
 import IconFacebook from "../../shared/IconFacebook/IconFacebook"
 import IconGithub from "../../shared/IconGithub/IconGithub"
+import data from "../../data"
+import LightBox from '../../components/LightBox/LightBox'
+
 import {
     Container,
     LeftHeader,
@@ -41,13 +44,26 @@ import {
     Hr,
     IconImage,
     TextContent,
-    IconImageHeader
+    IconImageHeader,
+    SkillList,
+    SkillItem,
+    SkillImage,
+    SkillContent,
+    PersonalProject,
+    ProjectsContainer,
+    ProjectsContainerLeft,
+    ProjectsContainerRight,
+    NameProject,
+    LinkDemo,
+    LinkGit,
+    ProjectsContainerWrapper
 } from "./CV.cpn"
-
+const skills = data["#feature"];
+const projects = data.projects
 function CV() {
     const menu = ["About", "Experience", "Education", "Skills", "Projects", "Interests", "The end"]
     const [menuSelected, setMenuSelected] = useState("About")
-
+    
     const [isMobile, setIsMobile] = useState(false)
 
     return (
@@ -73,7 +89,7 @@ function CV() {
             </MenuListMobile>
 
             <LeftHeader>
-                <Img src="person/avatar.jpg"></Img>
+                <Img src="person/it-me.jpg"></Img>
                 <MenuList>
                     {menu.map((item, index) => (
                         <MenuItem
@@ -172,17 +188,17 @@ function CV() {
                                     KING FOOD
                                 </TextContent>
                                 <TextContent className="fs-20 fw-700 mb-20">BACK-END ENGINEER</TextContent>
-                                <TextContent>
+                                <TextContent className="fw-500 fs-17">
                                     <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
                                     Provide API and build support features for sales and management of orders, products,
                                     inventory... of KING FOOD
                                 </TextContent>
-                                <TextContent>
+                                <TextContent className="fw-500 fs-17">
                                     <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
                                     I'm the <b>Leader</b> of a small team of about 3 members, analyzing requirements and
                                     creating tasks for members to solve problems.
                                 </TextContent>
-                                <TextContent>
+                                <TextContent className="fw-500 fs-17">
                                     <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
                                     <b>KING FOOD: </b>The supermarket chain provides fresh, clean food for the family's
                                     daily meals, not only fresh vegetables, fresh meat, fresh fruits, nutritious drinks
@@ -200,16 +216,16 @@ function CV() {
                                     DIROX
                                 </TextContent>
                                 <TextContent className="fs-20 fw-700 mb-20">BACK-END ENGINEER</TextContent>
-                                <TextContent>
+                                <TextContent className="fw-500 fs-17">
                                     <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
                                     Provide API and participate in company projects
                                 </TextContent>
-                                <TextContent>
+                                <TextContent className="fw-500 fs-17">
                                     <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
                                     I have the opportunity to work with many frameworks and technologies such as:
                                     GraphQL, Loopback.io, AWS Service, Fastify...
                                 </TextContent>
-                                <TextContent>
+                                <TextContent className="fw-500 fs-17">
                                     <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
                                     <b>DIROX: </b>A recognised IT Advisory and Software Development company For more
                                     than 17 years.
@@ -226,16 +242,16 @@ function CV() {
                                     HARAVAN
                                 </TextContent>
                                 <TextContent className="fs-20 fw-700 mb-20">BACK-END ENGINEER</TextContent>
-                                <TextContent>
+                                <TextContent className="fw-500 fs-17">
                                     <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
                                     Provide API and participate in company projects
                                 </TextContent>
-                                <TextContent>
+                                <TextContent className="fw-500 fs-17">
                                     <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
                                     I have the opportunity to work with many frameworks and technologies such as:
                                     GraphQL, Loopback.io, AWS Service, Fastify...
                                 </TextContent>
-                                <TextContent>
+                                <TextContent className="fw-500 fs-17">
                                     <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
                                     <b>DIROX: </b>A recognised IT Advisory and Software Development company For more
                                     than 17 years.
@@ -247,9 +263,57 @@ function CV() {
                         </tr>
                     </Table>
                 </Experience>
-                <Education></Education>
-                <Skills></Skills>
-                <Projects></Projects>
+                <Hr />
+                <Education className="mt-30">
+                    <Header className="fs-40">Education</Header>
+                    <Table>
+                        <tr>
+                            <td>
+                                <TextContent className="fs-25 fw-700 dark-basic-green-tree">
+                                    <IconImageHeader src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633850790/public/icons8-star-filled_1.gif" />
+                                    <Link className="text-link" href="http://actvn.edu.vn/" target="_blank">
+                                        I taught myself programming and then went to work
+                                    </Link>
+                                </TextContent>
+                                <TextContent className="fw-500 fs-17">
+                                    <IconImage src="https://res.cloudinary.com/minhnhat-dev/image/upload/v1633851301/public/icons8-flag-60_1.png" />
+                                    I didn't go to University, I taught myself to program.
+                                </TextContent>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </Table>
+                </Education>
+                <Skills>
+                    <Header className="fs-40">Skills</Header>
+                    <SkillList>
+                        {skills.map((skill, index) => {
+                            return  <SkillItem id={index}>
+                                <SkillContent>
+                                    <SkillImage src={skill.photoUrl}/>
+                                    <b className="mt-10">{skill.title}</b>
+                                </SkillContent>
+                            </SkillItem>
+                        })}
+                    </SkillList>
+                </Skills>
+                {/* <Projects>
+                    <Header className="fs-40">Personal Projects</Header>
+                    <ProjectsContainer>
+                        <ProjectsContainerWrapper>
+                            <ProjectsContainerLeft>
+                                <NameProject>Name project</NameProject>
+                                <LinkDemo>LinkDemo</LinkDemo>
+                                <LinkGit>LinkGit</LinkGit>
+                            </ProjectsContainerLeft>
+                            <ProjectsContainerRight>
+                                {projects.map((project, index) => {
+                                    return <LightBox key={index} images={project.images}></LightBox>
+                                })}
+                            </ProjectsContainerRight>
+                        </ProjectsContainerWrapper>
+                    </ProjectsContainer>
+                </Projects> */}
                 <Interests></Interests>
                 <TheEnd></TheEnd>
             </Content>

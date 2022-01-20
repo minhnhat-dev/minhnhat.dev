@@ -21,7 +21,7 @@ function Intro() {
                 <img className="gradient-border avatar" src="assets/bg-1.jpg" alt="" />
                 <div className="left">
                     <div className="container">
-                        <img className="gradient-border avatar" src="assets/person.jpeg" alt="" />
+                        <img className="gradient-border avatar" src="person/it-me.jpg" alt="" />
                     </div>
                 </div>
                 <div className="right">

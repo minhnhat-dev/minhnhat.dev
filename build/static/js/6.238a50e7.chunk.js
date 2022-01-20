@@ -1,2 +1,0 @@
-(this["webpackJsonpminhnhat.dev"]=this["webpackJsonpminhnhat.dev"]||[]).push([[6],{1573:function(n,e,t){"use strict";t.r(e);var a,i,s=t(0),c=t.n(s),h=t(11),r=t(12),l=r.b.div(a||(a=Object(h.a)(["\n    width: 100vw;\n    height: 100vh;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n"]))),u=r.b.p(i||(i=Object(h.a)(["\n    font-size: 40px;\n"])));e.default=function(){return c.a.createElement(l,null,c.a.createElement(u,{className:"fs-30 fw-500 gray-45"},"404 | NotFound"))}}}]);
-//# sourceMappingURL=6.238a50e7.chunk.js.map
